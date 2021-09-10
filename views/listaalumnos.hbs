@@ -1,0 +1,19 @@
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">Volver</a></li>
+      <li><a href="/alumnos/nuevoAlumno"> Nuevo Alumno</a></li>
+    </ul>
+  </nav>
+</header>
+<section>
+
+
+  <div class="list-group" style="background-color: grey; margin-top:15px">
+    <div>{{#each alumnos}}
+      <h4 class="list-group-item" style="background-color: white; font-size:15px; border:groove">
+        {{this.nombre}} {{this.apellidos}} <a href="/alumnos/{{this._id}}">Ver</a></h4>
+
+      {{/each}}
+    </div>
+  </div>

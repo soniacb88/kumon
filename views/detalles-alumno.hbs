@@ -1,0 +1,26 @@
+<header>
+  <nav>
+    <ul>
+      <li><a href="/">Volver</a></li>
+    </ul>
+  </nav>
+</header>
+<section>
+
+
+  <div class="card" style="width: 18rem; margin:100px">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"> Nombre: {{alumno.nombre}}</li>
+      <li class="list-group-item"> Apellidos: {{alumno.apellidos}}</li>
+      <li class="list-group-item"> Programa/s que cursa: {{alumno.programa}}</li>
+      <li class="list-group-item">Nivel actual: {{alumno.nivelActual}}</li>
+    </ul>
+    <div class="card-body">
+      <a href="/alumnos/delete/{{alumno._id}}" class="card-link btn btn-danger">BORRAR</a>
+      <br> <br>
+      <a href="/alumnos/edit/{{alumno._id}}" class="card-link btn btn-info">EDITAR</a>
+      <br> <br>
+      <a href="/alumnos" class="card-link btn btn-secondary">Volver</a>
+      <br> <br>
+    </div>
+  </div>
