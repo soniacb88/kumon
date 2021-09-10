@@ -1,28 +1,52 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #00B7FF; }
 
-a {
-  color: #00B7FF; }
-
-
-
-  nav {
+nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  background-color: blue;
+  padding: 1rem 2rem; }
+  nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    background-color: #144cc5;
-    padding: 1rem 2rem; }
-    nav ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 1rem;
-      margin-right: 2rem; }
-      nav ul a {
-        color: #f8f5f2;
-        text-decoration: none;
-        margin-left: 1.5rem; }
-  
-  
+    align-items: center;
+    font-size: 1rem;
+    margin-right: 2rem;
+    list-style: none; }
+    nav ul a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem; }
+    nav ul a:hover {
+      background-color: yellow; }
+
+form {
+  padding: 60px;
+  max-width: 400px;
+  background-color: #E7E7E7;
+  margin: 0 auto; }
+
+form input {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  color: #525c66;
+  font-size: 1em;
+  resize: horizontal; }
+
+form button {
+  display: block;
+  background-color: #0095eb;
+  padding: 10px 45px;
+  border: 0;
+  font-size: 1em;
+  color: white; }
+
+form button:hover {
+  background-color: #046193; }
+
 /*# sourceMappingURL=style.css.map */
